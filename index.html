@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incription</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body> 
+    <main> 
+        <form action="index.html">
+        <h1>Formulaire de participation au projet</h1>
+            <legend>Completez me formulaire Les champs marqué par <em>*</em> sont&nbsp;<em>obligatoires</em></legend>
+            <fieldset class="contact">
+                <legend>Contact</legend>
+                <label for="Nom" id="Nom" pattern="[a-ZA-A]*.[a-zA-A]">Nom <em>*</em> :<input type="text"placeholder="Nom" id="nom" required></label>
+                <label for="Portable">Portable : <input type="text" placeholder="Portable"name="" id="portable" pattern="06[0-9]{8}"></label>
+                <label for="email">Email <em>*</em>: <input type="text" placeholder="Email" id="email" required></label>
+            </fieldset>
+            <fieldset class="info">
+                <legend>Information personelles</legend>
+                <label for="age">Age <em>*</em> :<input type="text"placeholder="XX" class="age" required></label>
+                <label>sexe
+                    <select class="sexe">
+                        <option value="choisir">Choisir</option>
+                        <option value="feminin">Feminin</option>
+                        <option value="masculin">Masculin</option>
+                    </select>
+                </label>
+                
+                <label for="com">Pourquoi voulez vous vous impliquer dans le développement du projet ?<textarea class="com" name="commentaire" rows="10" cols="50"></textarea></label>
+                    
+            </fieldset>
+            <fieldset class="langue">
+                <legend>Choissisez vos languages favoris</legend>
+                <label><input type="checkbox" id="HTML" value="option1" name="options"><span>HTML</span></label> 
+                <label><input type="checkbox" id="CSS" value="option1" name="options"><span>CSS</span></label> 
+                <label><input type="checkbox" id="JS" value="option1" name="options"><span>JS</span></label> 
+                <label><input type="checkbox" id="PHP" value="option1" name="options"><span>PHP</span></label> 
+                <label><input type="checkbox" id="Python" value="option1" name="options"><span>Python</span></label> 
+                <label><input type="checkbox" id="Java" value="option1" name="options"><span>Java</span></label> 
+                <label><input type="checkbox" id="C-sharp" value="option1" name="options"><span>C-Sharp</span></label> 
+                <label><input type="checkbox" id="Ruby" value="option1" name="options"><span>Ruby</span></label> 
+            </fieldset>
+            <input type="submit" value="Soumettre"> 
+        </form>
+    </main>
+</body>
+</html>
